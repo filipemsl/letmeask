@@ -10,7 +10,7 @@
 </p>
 
 
-Layout do Projeto:
+<strong>Layout do Projeto:</strong>
 
 https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate
 
