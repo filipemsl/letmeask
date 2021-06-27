@@ -3,9 +3,20 @@
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   padding: 24px;
-& + .question {
+
+  & + .question {
   margin-top: 8px;
-  
+}
+ &.highlighted {
+   background: #f4f0ff;
+   border: 1px solid #835afd;
+   footer .user-info span{
+     color: #29292e;
+   }
+ }
+
+ &.answered {
+background: #DBDCDD;
 }
 
   p{
@@ -18,6 +29,7 @@
     align-items: center;
     margin-top: 24px;
   }
+  
   .user-info{
     display: flex;
     align-items: center;
@@ -31,5 +43,33 @@
         color: #737380;
         font-size: 14px;
     }
+}
+
+div {
+display: flex;
+gap: 16px;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &.like-button {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    color: #737380;
+    &.liked {
+      color: #835afd;
+      svg path {
+        stroke: #835afd;
+      }
+    }
+  }
+  &:hover {
+    filter: brightness(0.7);
+  }
 }
 }
